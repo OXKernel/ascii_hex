@@ -97,12 +97,6 @@ int main(int argc, char **argv)
             // Split into two parts.
             char tlow = (byte & 0xF);
             char thi  = ((byte >> 4) & 0xF);
-            if(tlow > 15 || tlow < 0) {
-                cerr << "tlow error" << endl;
-            }
-            if(thi > 15 || thi < 0) {
-                cerr << "thi error" << endl;
-            }
             char low = int_to_ascii_hex[(byte & 0xF)];
             char hi  = int_to_ascii_hex[(byte >> 4) & 0xF];
             fputc(hi  , out);
