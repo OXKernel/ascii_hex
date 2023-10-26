@@ -19,5 +19,5 @@ Simple to implement and very fast.
 Expands data to 2x the original size always.
 
 But, this data can be compressed nicely, almost to
-the same compression size of that the original data compresses to.
+the same compression size that the original data compresses to.
 
