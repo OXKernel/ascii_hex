@@ -97,8 +97,8 @@ int main(int argc, char **argv)
             // Split into two parts.
             char tlow = (byte & 0xF);
             char thi  = ((byte >> 4) & 0xF);
-            char low = int_to_ascii_hex[(byte & 0xF)];
-            char hi  = int_to_ascii_hex[(byte >> 4) & 0xF];
+            char low = int_to_ascii_hex[tlow];
+            char hi  = int_to_ascii_hex[thi];
             fputc(hi  , out);
             fputc(low , out);
         }
